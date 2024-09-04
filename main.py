@@ -30,3 +30,15 @@ for i in range(len(df)):
                 connection.sendmail(from_addr=my_mail,
                                     to_addrs=df["email"][i],
                                     msg=f"Subject:Happy Birthday!!!\n\n{bd_letter}")
+
+# This program can be executed every day using "python everywhere"
+# First create an account
+# Add program files in files tab and folder(same name as in program "letter_templates") in directories
+# Create new bash console in "console" tab
+# run cmd "python3 main.py" to run our program
+# If "smtpAuthenticationError" occurs the copy the link at the end of the message and search it
+# Once page loaded, under step 2, click the link "DisplayUnlockCaptcha" and hit "continue"
+# run cmd "python3 main.py" again and nothing if displayed, the code executed successfully
+# To run this program daily, go to "task" tab
+# Type cmd "python3 main.py" in the input field and utc time
+# Click "create", CONGRATS!!! this program will run daily at specified utc time.
